@@ -106,7 +106,7 @@ Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on 
 
 Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running `rustc --version` to see your dev container is running a recent version of Rust without much effort!
 
-!!! note `As of this writing: 1.84.0 released in January of 2025.`
+!!! note "As of this writing: 1.84.0 released in January of 2025."
 
 ### Step 3: Create a New Rust Binary Project
 
