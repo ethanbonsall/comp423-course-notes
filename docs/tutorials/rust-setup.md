@@ -23,7 +23,8 @@
 ### Step 1. Create a Local Directory and Initialize Git
 #### (A) Open your terminal or command prompt.
 
-#### (B) Create a new directory for your project. (Note: Of course, if you'd like to organize this tutorial somewhere else on your machine, go ahead and change into that parent directory first. By default this will be in your user's home directory.):
+#### (B) Create a new directory for your project. 
+!!! Note "Of course, if you'd like to organize this tutorial somewhere else on your machine, go ahead and change into that parent directory first. By default this will be in your user's home directory."
 
 
 ```
@@ -63,7 +64,7 @@ git commit -m "Initial commit with README"
 `git remote add origin https://github.com/<your-username>/rust-tutorial.git`
 !!! info "Replace <your-username> with your GitHub username."
 
-#### (2) Check your default branch name with the subcommand git branch. If it's not main, rename it to main with the following command: git branch -M main. Old versions of git choose the name master for the primary branch, but these days main is the standard primary branch name.
+#### (2) Check your default branch name with the subcommand `git branch`. If it's not main, rename it to main with the following command: `git branch -M main`. Old versions of git choose the name master for the primary branch, but these days main is the standard primary branch name.
 
 #### (3) Push your local commits to the GitHub repository:
 
