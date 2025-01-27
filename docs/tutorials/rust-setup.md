@@ -76,17 +76,16 @@ git commit -m "Initial commit with README"
 ## Part 2. Setting Up the Development Environment
 
 ### Step 1. Add Development Container Configuration
-- In VS Code, open the rust-setup directory. You can do this via: File > Open Folder.
-- Install the Dev Containers extension for VS Code.
-- Create a .devcontainer directory in the root of your project with the following file inside of this "hidden" configuration directory:
-- .devcontainer/devcontainer.json
+1. In VS Code, open the rust-setup directory. You can do this via: File > Open Folder.
+2. Install the Dev Containers extension for VS Code.
+3. Create a .devcontainer directory in the root of your project with the following file inside of this "hidden" configuration directory:
+`devcontainer/devcontainer.json`
 
 #### The devcontainer.json file defines the configuration for your development environment. Here, we're specifying the following:
 
 - name: A descriptive name for your dev container.
 - image: The Docker image to use, in this case, the latest version of a Rust environment. Microsoft maintains a collection of base images for many programming language environments, but you can also create your own!
 - customizations: Adds useful configurations to VS Code, like installing the Rust extension. When you search for VSCode extensions on the marketplace, you will find the string identifier of each extension in its sidebar. Adding extensions here ensures other developers on your project have them installed in their dev containers automatically.
-- postCreateCommand: A command to run after the container is created. In our case, it will use pip to install the dependencies listed in requirements.txt.
 
 ```
 {
@@ -102,9 +101,12 @@ git commit -m "Initial commit with README"
 ```
 ### Step 2. Reopen the Project in a VSCode Dev Container
 
-Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
+Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. 
+!!! info "This may take a few minutes while the image is downloaded and the requirements are installed."
 
-Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running rustc --version to see your dev container is running a recent version of Rust without much effort! (As of this writing: 1.84.0 released in January of 2025.)
+Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running `rustc --version` to see your dev container is running a recent version of Rust without much effort!
+
+!!! note `As of this writing: 1.84.0 released in January of 2025.`
 
 ### Step 3: Create a New Rust Binary Project
 
@@ -112,12 +114,12 @@ To create a new Rust binary project inside your development container, use the `
 
 Here’s how to do it:
 
-1. Open the terminal in VS Code (inside your dev container).
-2. Run the following command to create a new Rust binary project:
+- Open the terminal in VS Code (inside your dev container).
+- Run the following command to create a new Rust binary project:
 
 `cargo new hello_comp423 --vcs none`
 
-3. Navigate to your new project directory:
+- Navigate to your new project directory:
 `cd hello_comp423`
 
 ### Step 4: Write a New Rust Program 
