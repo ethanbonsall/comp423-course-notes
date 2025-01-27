@@ -83,8 +83,8 @@ git commit -m "Initial commit with README"
 #### The devcontainer.json file defines the configuration for your development environment. Here, we're specifying the following:
 
 - name: A descriptive name for your dev container.
-- image: The Docker image to use, in this case, the latest version of a Python environment. Microsoft maintains a collection of base images for many programming language environments, but you can also create your own!
-- customizations: Adds useful configurations to VS Code, like installing the Python extension. When you search for VSCode extensions on the marketplace, you will find the string identifier of each extension in its sidebar. Adding extensions here ensures other developers on your project have them installed in their dev containers automatically.
+- image: The Docker image to use, in this case, the latest version of a Rust environment. Microsoft maintains a collection of base images for many programming language environments, but you can also create your own!
+- customizations: Adds useful configurations to VS Code, like installing the Rust extension. When you search for VSCode extensions on the marketplace, you will find the string identifier of each extension in its sidebar. Adding extensions here ensures other developers on your project have them installed in their dev containers automatically.
 - postCreateCommand: A command to run after the container is created. In our case, it will use pip to install the dependencies listed in requirements.txt.
 
 ```
@@ -103,7 +103,7 @@ git commit -m "Initial commit with README"
 
 Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
 
-Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running rustc --version to see your dev container is running a recent version of Python without much effort! (As of this writing: 1.84.0 released in January of 2025.)
+Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode, and try running rustc --version to see your dev container is running a recent version of Rust without much effort! (As of this writing: 1.84.0 released in January of 2025.)
 
 ### Step 3: Create a New Rust Binary Project
 
