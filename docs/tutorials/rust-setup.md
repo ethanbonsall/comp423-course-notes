@@ -96,9 +96,8 @@ git commit -m "Initial commit with README"
       "settings": {},
       "extensions": ["rust-lang.rust-analyzer"]
     }
-  },
+  }
 }
-
 ```
 ## Step 2. Reopen the Project in a VSCode Dev Container
 
