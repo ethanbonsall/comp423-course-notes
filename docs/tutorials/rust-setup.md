@@ -19,11 +19,11 @@
 4. Docker installed: Required to run the dev container. [Get Docker here](https://www.docker.com/products/docker-desktop/).
 5. Command-line basics
 
-# Part 1. Project Setup: Creating the Repository
-## Step 1. Create a Local Directory and Initialize Git
-### (A) Open your terminal or command prompt.
+## Part 1. Project Setup: Creating the Repository
+### Step 1. Create a Local Directory and Initialize Git
+#### (A) Open your terminal or command prompt.
 
-### (B) Create a new directory for your project. (Note: Of course, if you'd like to organize this tutorial somewhere else on your machine, go ahead and change into that parent directory first. By default this will be in your user's home directory.):
+#### (B) Create a new directory for your project. (Note: Of course, if you'd like to organize this tutorial somewhere else on your machine, go ahead and change into that parent directory first. By default this will be in your user's home directory.):
 
 
 ```
@@ -31,11 +31,11 @@ mkdir rust-tutorial
 cd rust-tutorial
 ```
 
-### (C) Initialize a new Git repository:
+#### (C) Initialize a new Git repository:
 
 `git init`
 
-### D) Create a README file:
+#### D) Create a README file:
 
 
 ```
@@ -43,44 +43,44 @@ echo "# Rust Tutorial" > README.md
 git add README.md
 git commit -m "Initial commit with README"
 ```
-## Step 2. Create a Remote Repository on GitHub
-### (1) Log in to your GitHub account and navigate to the Create a New Repository page.
+### Step 2. Create a Remote Repository on GitHub
+#### (1) Log in to your GitHub account and navigate to the Create a New Repository page.
 
-### (2) Fill in the details as follows:
+#### (2) Fill in the details as follows:
 
 - Repository Name: Rust Tutorial
 - Description: "Tutorial to setup a rust container."
 - Visibility: Public
 
-### (3) Do not initialize the repository with a README, .gitignore, or license.
+#### (3) Do not initialize the repository with a README, .gitignore, or license.
 
-### (4) Click Create Repository.
+#### (4) Click Create Repository.
 
-## Step 3. Link your Local Repository to GitHub
-### (1) Add the GitHub repository as a remote:
+### Step 3. Link your Local Repository to GitHub
+#### (1) Add the GitHub repository as a remote:
 
 
 `git remote add origin https://github.com/<your-username>/comp423-course-notes.git`
 !!! info "Replace <your-username> with your GitHub username."
 
-### (2) Check your default branch name with the subcommand git branch. If it's not main, rename it to main with the following command: git branch -M main. Old versions of git choose the name master for the primary branch, but these days main is the standard primary branch name.
+#### (2) Check your default branch name with the subcommand git branch. If it's not main, rename it to main with the following command: git branch -M main. Old versions of git choose the name master for the primary branch, but these days main is the standard primary branch name.
 
-### (3) Push your local commits to the GitHub repository:
+#### (3) Push your local commits to the GitHub repository:
 
 
 `git push --set-upstream origin main`
 
-### (4) Back in your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote. You can use git log locally to see the commit ID and message which should match the ID of the most recent commit on GitHub. This is the result of pushing your changes to your remote repository.
+#### (4) Back in your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote. You can use git log locally to see the commit ID and message which should match the ID of the most recent commit on GitHub. This is the result of pushing your changes to your remote repository.
 
-# Part 2. Setting Up the Development Environment
+## Part 2. Setting Up the Development Environment
 
-## Step 1. Add Development Container Configuration
+### Step 1. Add Development Container Configuration
 - In VS Code, open the rust-setup directory. You can do this via: File > Open Folder.
 - Install the Dev Containers extension for VS Code.
 - Create a .devcontainer directory in the root of your project with the following file inside of this "hidden" configuration directory:
 - .devcontainer/devcontainer.json
 
-### The devcontainer.json file defines the configuration for your development environment. Here, we're specifying the following:
+#### The devcontainer.json file defines the configuration for your development environment. Here, we're specifying the following:
 
 - name: A descriptive name for your dev container.
 - image: The Docker image to use, in this case, the latest version of a Python environment. Microsoft maintains a collection of base images for many programming language environments, but you can also create your own!
@@ -99,7 +99,7 @@ git commit -m "Initial commit with README"
   }
 }
 ```
-## Step 2. Reopen the Project in a VSCode Dev Container
+### Step 2. Reopen the Project in a VSCode Dev Container
 
 Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
 
