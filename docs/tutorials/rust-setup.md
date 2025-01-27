@@ -60,7 +60,7 @@ git commit -m "Initial commit with README"
 #### (1) Add the GitHub repository as a remote:
 
 
-`git remote add origin https://github.com/<your-username>/comp423-course-notes.git`
+`git remote add origin https://github.com/<your-username>/rust-tutorial.git`
 !!! info "Replace <your-username> with your GitHub username."
 
 #### (2) Check your default branch name with the subcommand git branch. If it's not main, rename it to main with the following command: git branch -M main. Old versions of git choose the name master for the primary branch, but these days main is the standard primary branch name.
